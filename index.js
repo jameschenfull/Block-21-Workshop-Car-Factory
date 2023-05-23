@@ -1,16 +1,16 @@
-//Define a constructor function Car with the ff. properties: make, model, year
+//Define a constructor
 class Car {
   constructor(make, model, year) {
     this.make = make;
     this.model = model;
     this.year = year;
   }
-  //Add method getDescription that returns info of the Car
+  //Add method getDescription
   getDescription() {
     return `make ${this.make}, model ${this.model}, year ${this.model}`;
   }
 }
-// create a ElectricCar subclass, include all Car param plus range
+// create a ElectricCar subclass
 class ElectricCar extends Car {
   constructor(make, model, year, range) {
     super(make, model, year);
@@ -20,6 +20,6 @@ class ElectricCar extends Car {
     return `make: ${this.make}, model: ${this.model}, year: ${this.model}, range: ${this.range}`;
   }
 }
-// print string containing ElectricCar infos
+// print string
 const carInfo = new ElectricCar("Tesla", "Model S", "2019", "300");
 console.log(carInfo.getDescription());
